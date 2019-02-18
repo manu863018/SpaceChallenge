@@ -10,7 +10,11 @@ public class Main {
         ArrayList<Item> itemsPhase2 = simulation.loadItems("D:\\Minions\\Final Project\\SpaceChallenge\\src\\resources\\Phase-2.txt");
         ArrayList<Rocket> fleetPhase1 = simulation.loadU1(itemsPhase1);
         ArrayList<Rocket> fleetPhase2 = simulation.loadU1(itemsPhase2);
+        ArrayList<Rocket> fleetPhase3 = simulation.loadU2(itemsPhase1);
+        ArrayList<Rocket> fleetPhase4 = simulation.loadU2(itemsPhase2);
         System.out.println("Run Simulation U1 for phase 1: " + simulation.runSimulation(fleetPhase1));
         System.out.println("Run Simulation U1 for phase 2: " + simulation.runSimulation(fleetPhase2));
+        System.out.println("Run Simulation U2 for phase 1: " + simulation.runSimulation(fleetPhase3));
+        System.out.println("Run Simulation U2 for phase 2: " + simulation.runSimulation(fleetPhase4));
     }
 }
