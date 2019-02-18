@@ -37,7 +37,7 @@ public class Rocket implements SpaceShip {
         this.maxCargo = maxCargo;
     }
 
-    public double getmaxCargo() {
+    public double getMaxCargo() {
         return maxCargo;
     }
 
@@ -45,7 +45,7 @@ public class Rocket implements SpaceShip {
         this.cost = cost;
     }
 
-    public void setWeigth(double weight) {
+    public void setWeight(double weight) {
         this.weigth = weight;
     }
 
