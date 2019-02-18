@@ -35,8 +35,18 @@ public class Simulation  {
         return rocketsU1;
     }
 
-    public ArrayList<U2> loadU2(ArrayList<String> itemsToLoad) {
-        return new ArrayList<U2>();
+    public ArrayList<Rocket> loadU2(ArrayList<Item> itemsToLoad) {
+        ArrayList<Rocket> rocketsU2 = new ArrayList<>();
+        Rocket rocketU2;
+        for (Item item : itemsToLoad) {
+            rocketU2 = new U1();
+            if (rocketU2.canCarry(item)) {
+                rocketU2.carry(item);
+                rocketsU2.add(rocketU2);
+            }
+        }
+
+        return rocketsU2;
     }
 
     public double runSimulation(ArrayList<Rocket> rockets) {
